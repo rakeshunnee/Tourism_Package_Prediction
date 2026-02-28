@@ -7,7 +7,7 @@ import joblib
 model_path = hf_hub_download(repo_id="rakeshunnee/tourism_package_prediction_model", filename="best_tourism_package_prediction_model_v1.joblib")
 model = joblib.load(model_path)
 
-# Streamlit UI for Machine Failure Prediction
+# Streamlit UI for Tourism Package Prediction
 st.title("Tourism Package Prediction App")
 st.write("""
 This application predicts the likelihood of a customer purchasing a tourism package based on their profile.
