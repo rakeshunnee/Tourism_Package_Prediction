@@ -35,7 +35,7 @@ Designation = st.selectbox("Designation", ["AVP", "Executive", "Manager", "VP", 
 MonthlyIncome = st.number_input("Monthly Income", min_value=500.0, max_value=200000.0, value=15000.0, step=100.0)
 
 # Convert to model format
-passport = 1 if passport == "Yes" else 0
+Passport = 1 if Passport == "Yes" else 0
 own_car = 1 if own_car == "Yes" else 0
 
 # Assemble input into DataFrame
@@ -53,7 +53,7 @@ input_data = pd.DataFrame([
     'PreferredPropertyStar': PreferredPropertyStar,
     'MaritalStatus': MaritalStatus,
     'NumberOfTrips': NumberOfTrips,
-    'Passport': passport,
+    'Passport': Passport,
     'PitchSatisfactionScore': PitchSatisfactionScore,
     'OwnCar': own_car,
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
